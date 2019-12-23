@@ -56,6 +56,13 @@ h2 {
 
 .save {
     float: right;
+    background: #3f1f60;
+    color: white;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: 600;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
 
 .post-form textarea,
