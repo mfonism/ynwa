@@ -1,8 +1,11 @@
 body {
-    background: #F6EBFF;
-    color: #2F4858;
-    font-weight: 500;
+    /*background: #F6EBFF;*/
+    /*color: #2F4858;*/
     overflow-x: hidden;
+    font-weight: 500;
+    background-color: white;
+    background: white url('../img/noise-pattern.png') repeat;
+    color: #333;
 }
 
 h2 {
@@ -15,6 +18,8 @@ h2 {
 .page-header {
     background-color: #3f1f60;
     padding: 1.25rem 4rem;
+    font-size: 2rem;
+    line-height: 1.5;
 }
 
 .page-header a,
@@ -49,8 +54,10 @@ h2 {
 }
 
 .attribution {
-    color: #245566;
-    font-size: small;
+    /*color: #245566;*/
+    color: #777;
+    font-style: italic;
+    font-size: 1rem;
     margin-bottom: 0.75rem;
 }
 
