@@ -1,0 +1,485 @@
+[{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "blog",
+        "model": "post"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "631aslc510qv6c6ra8ckwrb270soqwpk",
+    "fields": {
+        "session_data": "NTgxZjM4MWFkZWNiOWIyMDYyMmE0NWI5MjQ0NDhmY2U1NGY4NDI0Yjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIwMmJhMjdmMmZkZGY2YjI0YmM4MmYyMTBhOTBjOGUyNmRiMmFhNGMyIn0=",
+        "expire_date": "2020-01-05T21:51:31.380Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "p35e01l7kt2dacj2ys1lvtqhbdhmhksf",
+    "fields": {
+        "session_data": "ZGY5MjAzOTU3Zjk1MDg1MDZkOWQ0YzdlNWM1OWMwNzhlYzc1ODA2Yjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlNGY0Nzg3MWQxMDY3YjhlYTAyNDMxMDY0M2IwYzljN2E3MGY0YzI3In0=",
+        "expire_date": "2020-01-06T00:46:17.546Z"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add post",
+        "content_type": 7,
+        "codename": "add_post"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change post",
+        "content_type": 7,
+        "codename": "change_post"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete post",
+        "content_type": 7,
+        "codename": "delete_post"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view post",
+        "content_type": 7,
+        "codename": "view_post"
+    }
+}, {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$znjnHXcrNoCi$fYD44TemhURnCY7BshQc5OSDyIsjUBpMQom+utprxD8=",
+        "last_login": "2019-12-23T00:46:17.518Z",
+        "is_superuser": true,
+        "username": "mfonism",
+        "first_name": "",
+        "last_name": "",
+        "email": "mfonetimfon@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-12-22T21:50:19.648Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+        "author": 1,
+        "title": "You will Never Walk Alone",
+        "text": "We are the legions of voices in your head,\r\nYou will never walk alone!\r\nWhen you find true religion, you're gonna find us there,\r\nYou will never walk alone!",
+        "created_date": "2019-12-22T22:56:06Z",
+        "published_date": "2019-12-22T23:03:46Z"
+    }
+}, {
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+        "author": 1,
+        "title": "Don't Tell Me No",
+        "text": "I'm gonna make it,\r\nDon't tell me no!\r\nI'm forging ahead, yeah,\r\nAiming for greatness - \r\nAnd victory is sure;\r\nI'm getting double\r\nFor all my troubles -\r\nIt's my moment,\r\nYes, I own it,\r\nDon't tell me no;\r\nDon't tell me no!",
+        "created_date": "2019-12-22T23:04:01Z",
+        "published_date": "2019-12-23T03:06:04Z"
+    }
+}, {
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+        "author": 1,
+        "title": "Camouflage",
+        "text": "So you've spent all of your days,\r\nSeeking vengeance,\r\nYou look so pretty in a camouflage;\r\nYou got me where you want me,\r\nAre you gonna shoot me now?\r\nAre you gonna shoot me now?\r\nI'm cool with it, pull the trigger now!",
+        "created_date": "2019-12-22T23:06:27Z",
+        "published_date": "2019-12-25T09:57:19Z"
+    }
+}, {
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+        "author": 1,
+        "title": "The Sun Shall Soon Shine Again",
+        "text": "Hey, this is not the end,\r\nWhat's a storm, I've survived hurricanes!\r\nDon't mind if it pours and I'm drenched to my skin,\r\nCos I know the sun shall soon shine again.",
+        "created_date": "2019-12-22T23:11:58Z",
+        "published_date": "2019-12-24T13:00:54Z"
+    }
+}, {
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+        "author": 1,
+        "title": "The Dust I leave Behind",
+        "text": "Haters in my DM like,\r\n\"Knee-guh, what you tryna proove?\"\r\nWith you're skin so black,\r\nYou ain't got no swag,\r\nNot even followers on Instagram;\r\n\r\nI put my hands in the air\r\nTell 'em I don't care\r\nKeep on hating all you like!\r\nI am a rocket blasting off, yeah,\r\nFeed on the dust I leave behind.",
+        "created_date": "2019-12-22T23:14:22Z",
+        "published_date": "2019-12-23T00:46:34Z"
+    }
+}, {
+    "model": "blog.post",
+    "pk": 6,
+    "fields": {
+        "author": 1,
+        "title": "Robots and Dinosaurs",
+        "text": "The Spartan Kings rode the Trojan horse,\r\nThe regent Queen rode the London bus,\r\nAs for me in my adventures\r\nThere'll be robots and dinosaurs.",
+        "created_date": "2019-12-23T00:47:05Z",
+        "published_date": "2019-12-23T00:48:31Z"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2019-12-22T23:03:56.500Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "You'll Never Walk Alone",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2019-12-22T23:06:25.979Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "2",
+        "object_repr": "Don't Tell Me No",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2019-12-22T23:11:54.843Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "3",
+        "object_repr": "Camouflage",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2019-12-22T23:14:20.919Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "The Sun Shall Soon Shine Again",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2019-12-22T23:18:34.756Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "The Dust I leave Behind",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2019-12-22T23:19:59.634Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "You will Never Walk Alone",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Text\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2019-12-22T23:20:12.214Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "You will Never Walk Alone",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2019-12-22T23:21:20.502Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "The Sun Shall Soon Shine Again",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Published date\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2019-12-23T00:46:37.383Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "The Dust I leave Behind",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"published_date\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2019-12-23T00:48:32.728Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "6",
+        "object_repr": "Robots and Dinosaurs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}]
