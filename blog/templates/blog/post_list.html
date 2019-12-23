@@ -1,5 +1,7 @@
 {%  extends "blog/base.html" %}
 
+{% load humanize %}
+
 {% block content %}
     {% for post in posts %}
         <div class="post">
@@ -7,7 +9,7 @@
             <div class="attribution">
                 &mdash;
                 <span class="author">{{ post.author }}</span>
-                <span class="date">({{ post.published_date }})</span>
+                <span class="date">({{ post.published_date|naturalday }})</span>
             </div>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
