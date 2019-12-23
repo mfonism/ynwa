@@ -1,7 +1,7 @@
 body {
     background: #F6EBFF;
     color: #2F4858;
-    font-weight: 600;
+    font-weight: 500;
     overflow-x: hidden;
 }
 
@@ -12,15 +12,35 @@ h2 {
 }
 
 .page-header {
-    background-color: #7B7294;
+    background-color: #3f1f60;
     padding: 1.25rem 4rem;
 }
 
 .page-header a,
 .page-header a:visited {
-    color: white;
     text-decoration: none;
     font-weight: 900;
+}
+
+.page-header span:nth-child(1) {
+    color: #FFBEC7;
+}
+
+.page-header span:nth-child(2) {
+    color: tomato;
+}
+
+.page-header span:nth-child(3) {
+    color: khaki;
+    font-size: 2.25rem;
+}
+
+.page-header a:hover span:nth-child(2) {
+    color: khaki;
+}
+
+.page-header a:hover span:nth-child(3) {
+    color: tomato;
 }
 
 .content {
@@ -57,6 +77,5 @@ h2 {
 
 .post h2 a,
 .post h2 a:visited {
-    color: #00896F;
+    color: #3F1F60;
 }
-
