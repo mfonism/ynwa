@@ -6,7 +6,8 @@ body {
 }
 
 h2 {
-    color: #00896F;
+    /*color: #00896F;*/
+    color: #3F1F60;
     font-family: 'Lobster', cursive;
     margin-bottom: 0;
 }
