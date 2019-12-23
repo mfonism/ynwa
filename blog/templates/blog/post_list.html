@@ -4,8 +4,18 @@
     <title>YNWA</title>
 </head>
 <body>
-    <h1>You Will Never Walk Alone</h1>
-    <p>Hello Intermediate Pythonista!</p>
-    <p>My name is Mfon Eti-mfon, and I am here to hold your hands as you walk up the steep slope towards mastery in Python.</p>
+
+    <div>
+        <h1><a href="/">YNWA</a></h1>
+    </div>
+
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+
 </body>
 </html>
