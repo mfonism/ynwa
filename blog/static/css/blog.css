@@ -2,6 +2,7 @@ body {
     background: #F6EBFF;
     color: #2F4858;
     font-weight: 600;
+    overflow-x: hidden;
 }
 
 h2 {
