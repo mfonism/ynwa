@@ -79,10 +79,18 @@ h2 {
     color: red;
 }
 
+.mce-panel,
 .post-form .textinput {
-    border: 1px solid #bbb;
+    border: 1px solid #c5c5c5;
     border-radius: 4px;
+}
+
+.post-form .textinput {
     padding: 0.25rem 0.5rem;
+}
+/* to match the rule above */
+.mce-content-body {
+    margin: 0.25rem 0.5rem;
 }
 
 .post-form .form-actions {
