@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # third party apps
     "froala_editor",
+    "crispy_forms",
     # apps from this project
     "blog.apps.BlogConfig",
 ]
@@ -125,3 +126,36 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_URL = "/media/"
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+# FROALA EDITOR
+
+FROALA_EDITOR_PLUGINS = (
+    "align",
+    "char_counter",
+    "code_beautifier",
+    "code_view",
+    "colors",
+    "draggable",
+    "emoticons",
+    "entities",
+    "file",
+    "font_family",
+    "font_size",
+    "fullscreen",
+    "image_manager",
+    "image",
+    "inline_style",
+    "line_breaker",
+    "link",
+    "lists",
+    "paragraph_format",
+    "paragraph_style",
+    "quick_insert",
+    "quote",
+    "save",
+    "table",
+    "url",
+    "video",
+)
+
+FROALA_UPLOAD_PATH = "uploads/editor"

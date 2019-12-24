@@ -57,20 +57,48 @@ h2 {
     margin-bottom: 0.75rem;
 }
 
-.save {
-    float: right;
+.post-form textarea,
+.post-form input {
+    width: 100%;
+}
+
+.post-form .control-group {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.post-form .control-label {
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #777;
+}
+
+.post-form .asteriskField {
+    color: red;
+}
+
+.post-form .textinput {
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+}
+
+.post-form .form-actions {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.post-form #submit-id-save {
     background: #3f1f60;
     color: white;
     text-transform: lowercase;
     font-variant: small-caps;
     font-weight: 600;
-    padding-right: 2rem;
-    padding-left: 2rem;
-}
-
-.post-form textarea,
-.post-form input {
-    width: 100%;
+    max-width: 12rem;
 }
 
 .top-menu,
