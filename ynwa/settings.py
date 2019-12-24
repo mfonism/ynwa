@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # third party apps
+    "froala_editor",
+    # apps from this project
     "blog.apps.BlogConfig",
 ]
 

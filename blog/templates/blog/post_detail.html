@@ -12,6 +12,6 @@
                 <span class="date">({{ post.published_date|naturalday }})</span>
             </div>
         {% endif %}
-        <p>{{ post.text|linebreaksbr }}</p>
+        <p>{{ post.content|safe }}</p>
     </div>
 {% endblock %}
