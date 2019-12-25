@@ -144,17 +144,18 @@ TINYMCE_DEFAULT_CONFIG = {
             visualchars code fullscreen autolink lists  charmap print  hr
             anchor pagebreak
             """,
-    "toolbar1": """
-            fullscreen preview bold italic underline | fontselect,
-            fontsizeselect  | forecolor backcolor | alignleft alignright |
-            aligncenter alignjustify | indent outdent | bullist numlist table |
-            | link image media | codesample |
-            """,
-    "toolbar2": """
-            visualblocks visualchars |
-            charmap hr pagebreak nonbreaking anchor |  code |
-            """,
-    "contextmenu": "formats | link image",
+    "toolbar1": (
+        " cut copy paste | bold italic underline "
+        " subscript superscript strikethrough | "
+        " forecolor backcolor | "
+    ),
+    "toolbar2": (
+        " bullist numlist blockquote | "
+        " alignleft aligncenter alignright alignjustify "
+        " undo redo | searchreplace styleselect "
+    ),
+    "toolbar3": (" link image codesample | " " fullscreen preview code "),
+    "contextmenu": "formats | link image ",
     "menubar": True,
     "statusbar": True,
 }
