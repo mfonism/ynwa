@@ -1,6 +1,19 @@
 {% extends 'blog/base.html' %}
 
+{% load static %}
 {% load humanize %}
+
+{% block thirdparty_staticfiles %}
+    <!-- Prism CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/prism/prism.css' %}">
+
+    <!-- Prism JS -->
+    <script src="{% static 'vendor/prism/prism.js' %}"></script>
+    <!-- Modified Codesample Plugin -->
+    <script src="{% static 'custom_plugins/codesample/plugin.min.js' %}"></script>
+    <!-- Modified Preview Plugin -->
+    <script src="{% static 'custom_plugins/preview/plugin.min.js' %}"></script>
+{% endblock %}
 
 {% block content %}
     <div class="post">
