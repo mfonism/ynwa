@@ -22,6 +22,7 @@ from django.urls import include, path
 from filebrowser.sites import site
 
 urlpatterns = [
+    path("accounts/", include("allauth.urls")),
     path("admin/filebrowsers/", site.urls),
     path("admin/", admin.site.urls),
     path("tinymce/", include("tinymce.urls")),

@@ -38,13 +38,21 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # django contrib apps required by allauth
+    "django.contrib.sites",
     # third party apps
     "filebrowser",
     "tinymce",
     "crispy_forms",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
     # apps from this project
     "blog.apps.BlogConfig",
 ]
+
+# Because we're using django.contrib.sites
+SITE_ID = 1
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -73,6 +81,13 @@ TEMPLATES = [
         },
     }
 ]
+
+AUTHENTICATION_BACKENDS = (
+    # Needed to login by username in Django admin, regardless of `allauth`
+    "django.contrib.auth.backends.ModelBackend",
+    # `allauth` specific authentication methods, such as login by e-mail
+    "allauth.account.auth_backends.AuthenticationBackend",
+)
 
 WSGI_APPLICATION = "ynwa.wsgi.application"
 
@@ -103,6 +118,8 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
