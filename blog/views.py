@@ -1,3 +1,4 @@
+from django.core.exceptions import PermissionDenied
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
@@ -20,6 +21,9 @@ def post_detail(request, pk):
 
 @login_required
 def post_new(request):
+    if not request.user.is_superuser:
+        raise PermissionDenied
+
     if request.method == "POST":
         form = PostForm(request.POST)
         if form.is_valid():
@@ -35,6 +39,9 @@ def post_new(request):
 
 @login_required
 def post_edit(request, pk):
+    if not request.user.is_superuser:
+        raise PermissionDenied
+
     post = get_object_or_404(Post, pk=pk)
     if request.method == "POST":
         form = PostForm(request.POST, instance=post)
@@ -51,6 +58,9 @@ def post_edit(request, pk):
 
 @login_required
 def post_delete(request, pk):
+    if not request.user.is_superuser:
+        raise PermissionDenied
+
     post = get_object_or_404(Post, pk=pk)
 
     post.delete()
