@@ -161,6 +161,9 @@ TINYMCE_DEFAULT_CONFIG = {
 }
 
 # FILEBROWSER
-FILEBROWSER_DIRECTORY = "editor_uploads"
+FILEBROWSER_DIRECTORY = "editor_uploads/"
 # remember to create a directory <MEDIA_ROOT>/<FILEBROWSER_DIRECTORY>
 # otherwise filebrowser won't work at all
+FILEBROWSER_VERSIONS_BASEDIR = os.path.join(
+    FILEBROWSER_DIRECTORY, "editor_uploads_thumbnails/"
+)
