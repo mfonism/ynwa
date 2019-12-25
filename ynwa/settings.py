@@ -159,3 +159,8 @@ TINYMCE_DEFAULT_CONFIG = {
     "menubar": True,
     "statusbar": True,
 }
+
+# FILEBROWSER
+FILEBROWSER_DIRECTORY = "editor_uploads"
+# remember to create a directory <MEDIA_ROOT>/<FILEBROWSER_DIRECTORY>
+# otherwise filebrowser won't work at all
