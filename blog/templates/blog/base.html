@@ -5,7 +5,10 @@
 <head>
     <meta charset="utf-8">
     <title>YNWA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hand-on tutorials to help the intermediate Pythonista level up in Python.">
+    <meta name="author" content="Mfon Eti-mfon">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -25,15 +28,45 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
 
-    <div class="page-header">
-        <div class="container">
-            <h1>
-                <a href="/"><span>YNWA</span><span>.</span><span>io</span></a>
-            </h1>
-        </div>
-    </div>
 
-    <div class="content">
+    <nav class="navbar navbar-expand-lg fixed-top page-header">
+        <!-- Brand -->
+        <a class="navbar-brand mr-auto mr-lg-5" href="/"><span>YNWA</span><span>.</span><span>io</span></a>
+        <!-- Toggler -->
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapse -->
+        <div class="navbar-collapse offcanvas-collapse ml-lg-5" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Labs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Opportunites</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn bg-pinkish my-2 my-sm-0" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <main role="main" class="content">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -50,6 +83,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <!-- Custom JS -->
+    <script src="{% static 'blog/js/main.js' %}"></script>
 </body>
 </html>
