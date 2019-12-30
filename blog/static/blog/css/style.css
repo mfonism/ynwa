@@ -25,7 +25,18 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5rem;
     font-weight: 900;
     padding: 0;
-    margin-top: 8px;
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    /*
+        Fix alignment issues between (the items in the) navbar brand
+        And the rest of the items in the navbar, on large screens
+    */
+    .navbar-brand span {
+        position: relative;
+        top: 2px;
+    }
 }
 
 .navbar-brand,
@@ -124,16 +135,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 40px;
     display: inline-block;
     position: relative;
-    margin-top: 8px;
-    /*
-        We need to set margin-top to 8px because so that the toggler
-        can look horizontally centred with respect to the logo.
-        The side-effect of this is that the parent container's height
-        increases by 8px, making the entire top-bar look too low from
-        the top edge of the screen.
-        To compensate for this, we have to set the top margin of the
-        top bar to -8px.
-    */
 }
 
 .hamburger-inner,
