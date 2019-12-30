@@ -17,7 +17,7 @@
 
 {% block content %}
     <div class="post">
-        <h2>{{ post.title }}</h2>
+        <h2 class="title">{{ post.title }}</h2>
         {% if post.published_date %}
             <div class="attribution">
                 &mdash;
@@ -25,6 +25,6 @@
                 <span class="date">({{ post.published_date|naturalday }})</span>
             </div>
         {% endif %}
-        <p>{{ post.content|safe }}</p>
+        <div class="post-content">{{ post.content|safe }}</div>
     </div>
 {% endblock %}

@@ -8,12 +8,12 @@ body {
     background-color: white;
     background: white url('../img/noise-pattern.png') repeat;
     color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
-h2 {
-    color: #3F1F60;
-    font-family: 'Lobster', cursive;
-    margin-bottom: 0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Baloo Bhai', cursive;
 }
 
 .page-header {
@@ -21,6 +21,7 @@ h2 {
 }
 
 .navbar-brand {
+    font-family: 'Baloo Bhai', cursive;
     font-size: 2.5rem;
     font-weight: 900;
     padding: 0;
@@ -216,11 +217,16 @@ h2 {
     font-variant: small-caps;
 }
 
-.attribution {
+.post .title {
+    color: #3F1F60;
+    margin-bottom: 0;
+}
+
+.post .attribution {
     /*color: #245566;*/
     color: #555;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 0.88rem;
     margin-bottom: 0.75rem;
 }
 
