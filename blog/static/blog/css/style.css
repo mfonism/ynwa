@@ -171,10 +171,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.navar-toggler {
-    border: none;
-}
-
 .navbar-toggler.is-active .hamburger-inner {
     width: 32px;
     transform: rotate(45deg);
@@ -195,12 +191,9 @@ h1, h2, h3, h4, h5, h6 {
     transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.navbar-toggler:focus {
+.navbar-toggler:hover,
+.navbar-toggler:hover:focus {
     outline: none;
-    color: transparent;
-    /* the dotted lines which appear on focusing on an element */
-    /* take as their color the value of the color property of the element */
-    /* to remove the dotted lines on focus */
 }
 
 .page-header .form-control:focus {
