@@ -3,7 +3,9 @@
 $(function () {
   'use strict'
 
-  $('[data-toggle="offcanvas"]').on('click', function () {
-    $('.offcanvas-collapse').toggleClass('open')
-  })
+  $('#navbarToggler').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('is-active');
+    $('#navbarCollapse').toggleClass('open');
+  });
 })

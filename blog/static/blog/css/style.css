@@ -4,7 +4,7 @@ body {
 }
 
 body {
-    padding-top: 56px;
+    padding-top: 76px;
     font-weight: 500;
     background-color: white;
     background: white url('../img/noise-pattern.png') repeat;
@@ -45,12 +45,33 @@ h2 {
     font-size: 2.25rem;
 }
 
+.navbar-brand:focus {
+    color: #FFBEC7;
+}
+
 .navbar-brand:hover span:nth-child(2) {
     color: khaki;
 }
 
 .navbar-brand:hover span:nth-child(3) {
     color: tomato;
+}
+
+.offcanvas-collapse .input-group .btn {
+    padding: 0.25rem 0.25rem 0.25rem 0.4rem;
+}
+
+.offcanvas-collapse .nav-link {
+    /*text-transform: lowercase;*/
+    /*font-variant: small-caps;*/
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #FFFAFA; /* Snow White */
+}
+
+.offcanvas-collapse .nav-link:hover,
+.offcanvas-collapse .nav-link:focus {
+    color: #FFBEC7;
 }
 
 @media (max-width: 991.98px) {
@@ -61,14 +82,17 @@ h2 {
         bottom: 0;
         left: 100%;
         width: 100%;
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding: 1.5rem 1rem;
         overflow-y: auto;
         visibility: hidden;
-        background-color: #343a40;
+        background-color: #1B1E23; /* Duron Black */
         transition-timing-function: ease-in-out;
         transition-duration: .3s;
         transition-property: left, visibility;
+    }
+
+    .offcanvas-collapse .navbar-nav {
+        margin-bottom: 3rem;
     }
 
     .offcanvas-collapse.open {
@@ -87,43 +111,91 @@ h2 {
         padding-bottom: 0;
     }
 
+    .offcanvas-collapse .form-control,
+    .offcanvas-collapse .input-group .btn {
+        height: 2.2rem;
+    }
+
 }
 
-.nav-scroller {
+.hamburger-box {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
     position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
+    margin-top: 8px;
+    /*
+        We need to set margin-top to 8px because so that the toggler
+        can look horizontally centred with respect to the logo.
+        The side-effect of this is that the parent container's height
+        increases by 8px, making the entire top-bar look too low from
+        the top edge of the screen.
+        To compensate for this, we have to set the top margin of the
+        top bar to -8px.
+    */
 }
 
-.nav-scroller .nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    color: rgba(255, 255, 255, .75);
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after {
+    background-color:  #FFFAFA; /* Snow White */
+    border-radius: 8px;
+    content: '';
+    display: block;
+    height: 4px;
+    position: absolute;
+    right: 0;
+
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
 }
 
-.nav-underline .nav-link {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    font-size: .875rem;
-    color: #6c757d;
+.hamburger-inner {
+    margin: -2px;
+    top: 50%;
+    width: 20px;
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.nav-underline .nav-link:hover {
-    color: #007bff;
+.hamburger-inner:before {
+    top: -8px;
+    width: 32px;
+    transition: top 0.1s 0.14s ease, opacity 0.1s ease;
 }
 
-.nav-underline .active {
-    font-weight: 500;
-    color: #343a40;
+.hamburger-inner:after {
+    bottom: -8px;
+    width: 26px;
+    transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.navbar-toggler.is-active .hamburger-inner {
+    width: 32px;
+    transform: rotate(45deg);
+    transition-delay: 0.14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.navbar-toggler.is-active .hamburger-inner:before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease, opacity 0.1s 0.14s ease;
+}
+
+.navbar-toggler.is-active .hamburger-inner:after {
+    width: 32px;
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.navbar-toggler:focus {
+    color: transparent;
+    /* the dotted lines which appear on focusing on an element */
+    /* take as their color the value of the color property of the element */
+    /* to remove the dotted lines on focus */
 }
 
 .page-header .form-control:focus {
