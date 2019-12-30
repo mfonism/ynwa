@@ -170,6 +170,10 @@ h2 {
     transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
+.navar-toggler {
+    border: none;
+}
+
 .navbar-toggler.is-active .hamburger-inner {
     width: 32px;
     transform: rotate(45deg);
@@ -191,6 +195,7 @@ h2 {
 }
 
 .navbar-toggler:focus {
+    outline: none;
     color: transparent;
     /* the dotted lines which appear on focusing on an element */
     /* take as their color the value of the color property of the element */
