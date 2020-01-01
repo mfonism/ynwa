@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 1.5rem 1rem;
         overflow-y: auto;
         visibility: hidden;
-        background-color: #1B1E23; /* Duron Black */
+        background-color: black;
         transition-timing-function: ease-in-out;
         transition-duration: .3s;
         transition-property: left, visibility;
