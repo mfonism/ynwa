@@ -1,6 +1,22 @@
 .hero {
-    background: #3f1f60;
+    background-color: #3f1f60;
+    background:
+    /* top, transparent purple-ish overlay, faked with gradient */
+    linear-gradient(
+        rgba(63, 31, 96, 0.64),
+        rgba(63, 31, 96, 0.64)
+    ),
+    /* bottom, image */
+    url('../img/dhe-haivan-JwLiLq24QbA-unsplash.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
+    padding: 2rem 1rem;
+}
+
+@media (min-width: 576px) {
+    .hero {
+        padding: 4rem 2rem;
+    }
 }
 
 .flip-clock-wrapper {
@@ -107,6 +123,7 @@
     font-size: 12px;
     text-transform: uppercase;
     font-variant: small-caps;
+    font-weight: 700;
 
     display: block;
     text-align: center;
