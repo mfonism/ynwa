@@ -19,6 +19,10 @@
     }
 }
 
+.content {
+    height: 100vh;
+}
+
 .flip-clock-wrapper {
     display: flex;
 }
