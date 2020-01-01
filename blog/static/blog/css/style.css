@@ -4,8 +4,14 @@ body {
     width: 100%;
 }
 
+html {
+    overflow-y: hidden;
+    height: 100%;
+}
+
 body {
     margin-top: 76px;
+    height: calc(100% - 76px);
     background-color: white;
     background: white url('../img/noise-pattern.png') repeat;
     color: #222;
