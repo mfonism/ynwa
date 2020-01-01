@@ -1,0 +1,49 @@
+{% extends "blog/base.html" %}
+
+{% load static %}
+
+
+{% block extra_thirdparty_stylesheets %}
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+
+    <!-- FlipClock CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/flipclock/flipclock.css' %}">
+{% endblock %}
+
+
+{% block extra_custom_stylesheets %}
+    <!-- Coming Soon CSS -->
+    <link rel="stylesheet" href="{% static 'blog/css/coming_soon.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="hero">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="half first">
+                </div>
+                <div class="half second">
+                    <h1 class="mt-5 mb-3">Coming Soon</h1>
+                    <div class="countdown text-center">
+                        <p class="date"><strong>February 29, 2020</strong></p>
+                        <div id="flipClock" class="flip-clock"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block extra_thirdparty_scripts %}
+    <!-- FlipClock JS -->
+    <script src="{% static 'vendor/flipclock/flipclock.js' %}"></script>
+{% endblock %}
+
+
+{% block extra_custom_scripts %}
+    <!-- Coming Soon JS -->
+    <script src="{% static 'blog/js/coming_soon.js' %}"></script>
+{% endblock %}
