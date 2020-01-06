@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+
+{% load humanize %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <h1 class="title"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <div class="attribution">
+                &mdash;
+                <span class="author">{{ post.author }}</span>
+                <span class="date">({{ post.created_date|naturalday }})</span>
+            </div>
+            <div class="post-content">{{ post.content|safe|truncatechars:200 }}</div>
+        </div>
+    {% endfor %}
+{% endblock %}

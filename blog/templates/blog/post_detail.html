@@ -18,13 +18,18 @@
 {% block content %}
     <div class="post">
         <h2 class="title">{{ post.title }}</h2>
-        {% if post.published_date %}
-            <div class="attribution">
-                &mdash;
-                <span class="author">{{ post.author }}</span>
+
+        <div class="attribution">
+            &mdash;
+            <span class="author">{{ post.author }}</span>
+            {% if post.published_date %}
                 <span class="date">({{ post.published_date|naturalday }})</span>
-            </div>
-        {% endif %}
+            {% else %}
+                <span class="date">({{ post.created_date|naturalday }})</span>
+                <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
+            {% endif %}
+        </div>
+
         <div class="post-content">{{ post.content|safe }}</div>
     </div>
 {% endblock %}
