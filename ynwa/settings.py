@@ -184,3 +184,5 @@ FILEBROWSER_DIRECTORY = "editor_uploads/"
 FILEBROWSER_VERSIONS_BASEDIR = os.path.join(
     FILEBROWSER_DIRECTORY, "editor_uploads_thumbnails/"
 )
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
