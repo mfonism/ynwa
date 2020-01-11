@@ -18,11 +18,33 @@
 
 .hero .half {
     background-color: #3F1F60;
-    padding: 6rem 0;
+    padding: 5rem 0 4.5rem;
+}
+
+@media (min-width: 440px) {
+    .hero .half {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (min-width: 538px) {
+    .hero .half {
+        padding: 6.25rem 3.75rem 5.5rem;
+    }
+}
+
+@media (min-width: 562px) {
+    .hero .half {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
 
 @media (min-width: 576px) {
     .hero .half {
+        padding-top: 7rem;
+        padding-bottom: 6rem;
     }
 }
 
