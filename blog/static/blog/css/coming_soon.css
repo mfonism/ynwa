@@ -5,43 +5,45 @@
 .hero p {
     font-size: 1.1rem;
     font-weight: 500;
+    line-height: 2rem;
+}
+
+.hero p:not(.motto) {
+    margin-top: 0.75rem;
+}
+
+.hero p.motto {
+    margin-top: 2rem;
 }
 
 .hero .half {
     background-color: #3F1F60;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding: 6rem 0;
 }
 
 @media (min-width: 576px) {
     .hero .half {
-        padding: 5rem;
     }
 }
 
 .hero .half.first {
     background:
     /* top, transparent purple-ish overlay, faked with gradient */
-    linear-gradient(
-        rgba(63, 31, 96, 0.64),
-        rgba(63, 31, 96, 0.64)
-    ),
+    radial-gradient(circle farthest-side at center, rgba(19, 9, 29, 0.8) 20%, rgba(82, 53, 112, 0.4) 100%),
     /* bottom, image */
     url('../img/dhe-haivan-JwLiLq24QbA-unsplash.jpg') no-repeat center center;
     background-size: cover;
 }
 
 .motto span {
-    font-weight: 900;
-    text-transform: lowercase;
-    font-variant: small-caps;
     display: inline-block;
-    height: 1.75rem;
-    width: 1.75rem;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
     margin-left: 0.48rem;
     margin-right: 0.08rem;
+    font-variant: titling-caps;
 }
 
 .flip-clock-wrapper {
