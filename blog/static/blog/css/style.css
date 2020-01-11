@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-header {
-    background-color: #3f1f60;
+    background-color: #3F1F60;
 }
 
 .navbar-brand {
@@ -76,8 +76,31 @@ h1, h2, h3, h4, h5, h6 {
     color: tomato;
 }
 
+.offcanvas-collapse .form-control {
+    border: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    color: black;
+    font-size: 0.96rem;
+}
+
 .offcanvas-collapse .input-group .btn {
-    padding: 0.25rem 0.25rem 0.25rem 0.4rem;
+    padding: 0.25rem 0.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #3F1F60;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .offcanvas-collapse .form-control {
+        background-color: #2C1643;
+        color: white;
+    }
+
+    .offcanvas-collapse .input-group .btn {
+        background-color: #32194D;
+    }
 }
 
 .offcanvas-collapse .nav-link {
@@ -102,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 1.5rem 1rem;
         overflow-y: auto;
         visibility: hidden;
-        background-color: black;
+        background-color: #32194D;
         transition-timing-function: ease-in-out;
         transition-duration: .3s;
         transition-property: left, visibility;
@@ -209,14 +232,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: #FFBEC7;
 }
 
-.page-header .input-group .btn {
-    background-color: #FFBEC7;
-    color: white;
-    text-transform: lowercase;
-    font-weight: 700;
-    font-variant: small-caps;
-}
-
 .post .title {
     color: #3F1F60;
     margin-bottom: 0;
@@ -253,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mce-panel,
 .post-form .textinput {
-    border: 1px solid #c5c5c5;
+    border: 1px solid #C5C5C5;
     border-radius: 4px;
 }
 
@@ -273,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-form #submit-id-save {
-    background: #3f1f60;
+    background: #3F1F60;
     color: white;
     text-transform: lowercase;
     font-variant: small-caps;
@@ -284,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
 .top-menu,
 .top-menu:hover,
 .top-menu:visited {
-    color: #ffffff;
+    color: white;
     float: right;
     font-size: 26pt;
     margin-right: 1.25rem;
