@@ -1,4 +1,13 @@
 .hero {
+    color: white;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.hero .half.first {
     background-color: #3f1f60;
     background:
     /* top, transparent purple-ish overlay, faked with gradient */
@@ -9,18 +18,30 @@
     /* bottom, image */
     url('../img/dhe-haivan-JwLiLq24QbA-unsplash.jpg') no-repeat center center;
     background-size: cover;
-    color: white;
-    padding: 2rem 1rem;
+}
+
+.hero .half {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 @media (min-width: 576px) {
-    .hero {
-        padding: 4rem 2rem;
+    .hero .half {
+        padding: 5rem;
     }
 }
 
-.content {
-    height: 100vh;
+.motto span {
+    font-weight: 900;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    display: inline-block;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left: 0.48rem;
+    margin-right: 0.08rem;
 }
 
 .flip-clock-wrapper {
@@ -82,7 +103,7 @@
     text-shadow: none;
     background-color: tomato;
     border-radius: 3px;
-} 
+}
 
 .flip-clock-wrapper ul li a div .shadow {
     border-radius: 3px;
