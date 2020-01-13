@@ -17,8 +17,25 @@
 }
 
 .hero .half {
-    background-color: #3F1F60;
     padding: 5rem 0 4.5rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .half.second {
+    background-color: white;
+}
+
+.hero .half.second .wrap {
+    background-color: #3F1F60;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 0 10px black;
 }
 
 @media (min-width: 440px) {
@@ -26,25 +43,47 @@
         padding-left: 3rem;
         padding-right: 3rem;
     }
+
+    .hero .half.second .wrap {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
 }
 
 @media (min-width: 538px) {
     .hero .half {
         padding: 6.25rem 3.75rem 5.5rem;
     }
+
+    .hero .half.second .wrap {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
 }
 
 @media (min-width: 562px) {
     .hero .half {
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .hero .half.second .wrap {
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 }
 
 @media (min-width: 576px) {
     .hero .half {
-        padding-top: 7rem;
-        padding-bottom: 6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 720px) {
+    .hero .half.second .wrap {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
 
@@ -80,28 +119,15 @@
     .hero .half {
         height: 100%;
         width: 50%;
-
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
     }
 
     .hero .half.first p {
         font-size: 1.2rem;
-    }
-
-    .hero .half.second {
-        background-color: white;
-        padding: 0;
+        text-align: left;
     }
 
     .hero .half.second .wrap {
-        background-color: #3F1F60;
-        padding: 3rem 2rem 2rem;
-        border-radius: 8px;
-        box-shadow: 0 8px 6px -6px black;
-        box-shadow: 0 0 10px black;
+        padding: 2.5rem 3rem 1.5rem;
     }
 }
 
@@ -114,6 +140,16 @@
     margin-left: 0.48rem;
     margin-right: 0.08rem;
     font-variant: titling-caps;
+}
+
+@media (min-width: 1200px) {
+    .motto span:first-of-type {
+        margin-left: 0;
+    }
+    .motto span {
+        margin-right: 0.2rem;
+        text-align: center;
+    }
 }
 
 .flip-clock-wrapper {
